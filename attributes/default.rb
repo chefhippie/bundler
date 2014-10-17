@@ -22,9 +22,9 @@ default["bundler"]["packages"] = value_for_platform_family(
   ),
   "ubuntu" => %w(
   ),
-  "suse" => %w(
-    rubygem-bundler
-  )
+  "suse" => [
+    "ruby#{node["languages"]["ruby"]["version"].to_f}-rubygem-bundler"
+  ]
 )
 
 default["bundler"]["gems"] = value_for_platform_family(
