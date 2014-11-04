@@ -58,8 +58,6 @@ action :update do
   end
 end
 
-protected
-
 def root
   Pathname.new new_resource.root
 end
